@@ -1,0 +1,311 @@
+body {
+    width: 100%;
+    min-width: 590px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+#mainNavbar .navbar-brand {
+    color: rgb(146, 146, 146);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#mainNavbar {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: rgb(255, 255, 255);
+    transition: ease-in-out color .15s;
+}
+
+#box {
+    margin-top: 40px;
+}
+
+.tabs {
+    display: inline-block;
+    text-align: center;
+    margin: auto 8%;
+}
+
+.tabs li {
+    display: inline-block;
+    text-align: center;
+    margin: auto 8px;
+}
+
+.tabs a {
+    font-size: 20pt;
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+#tabs a.active {
+    border: 2px solid #404040;
+}
+
+#quiz a {
+    background: #82D4F3;
+}
+
+#quiz a.active {
+    background: #00ACE9;
+}
+
+#quiz a:hover {
+    background: #00ACE9;
+}
+
+#study a {
+    background: #B5CC8D;
+}
+
+#study a.active {
+    background: #6A9A1F;
+}
+
+#study a:hover {
+    background: #6A9A1F;
+}
+
+ul #tabs {
+    float: left;
+    margin-left: 4%;
+    padding: 10px 10px 16px 10px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2), 0px 0px 7px 7px rgba(0, 0, 0, 0.19);
+}
+
+.folder {
+    padding: 1%;
+    margin: 0 2% .5% 2%;
+    width: 88%;
+    display: inline-block;
+    text-align: center;
+    background-color: #646E78;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2), 0px 0px 7px 7px rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    margin: 0;
+    font-size: 30pt;
+    text-align: center;
+    /* color: #404040; */
+}
+
+.howMany {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.card {
+    position: absolute;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: inline-block;
+    height: 270px;
+    width: 450px;
+    font-size: 17pt;
+    text-align: center;
+}
+
+div.study {
+    height: 240px;
+    width: 400px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 12px;
+}
+
+.front {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    resize: vertical;
+    overflow: auto;
+    background-color: white;
+    /* background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png"); */
+    padding: 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15), 0px 0px 7px 7px rgba(0, 0, 0, 0.14);
+    left: 0;
+}
+
+.back {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    resize: vertical;
+    overflow: auto;
+    text-align: center;
+    background-color: black;
+    /* background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png"); */
+    padding: 0;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15), 0px 0px 7px 7px rgba(0, 0, 0, 0.14);
+    left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    color: white;
+    padding: 8px 10px;
+    margin: 2% auto;
+    background-color: #404040;
+    border-radius: 15px;
+    border: 2px solid #404040;
+    font-size: 14pt;
+}
+
+button:hover {
+    color: #404040;
+    background-color: white;
+}
+
+#progress {
+    display: inline-block;
+    width: 500px;
+    border: 1px solid black;
+    padding: .3%;
+    margin: 2%;
+    position: relative;
+    text-align: center;
+}
+
+#percent {
+    position: relative;
+}
+
+#bar {
+    float: left;
+    height: 20px;
+    background-color: #282d32;
+}
+
+.block {
+    display: block;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form {
+    margin: 3% auto;
+}
+
+
+/* Below this is for the footer */
+
+.footer-dark {
+    margin-top: 140px;
+    padding: 9px 0;
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+
+/* Footer ends here */

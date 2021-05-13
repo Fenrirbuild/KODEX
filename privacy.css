@@ -1,0 +1,15 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+p {
+    display: block;
+    text-align: left;
+    font-weight: 300;
+}
+
+h4,
+li {
+    text-align: left;
+}

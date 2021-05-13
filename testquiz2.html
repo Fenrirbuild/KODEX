@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/bca5dccbcd.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="testquiz2.css">
+    <title>Quiz!</title>
+</head>
+
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-code"></i> KODEX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Languages  </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class=" text-center d-none d-lg-block mt-5 text-dark">
+        <h1 id="heading" class="display-3">Display 2</h1>
+    </div>
+    <div class="quizArea">
+        <div class="multipleChoiceQues">
+            <div class="my-progress">
+                <progress class="my-progress-bar" min="0" max="100" value="0" step="9" aria-labelledby="my-progress-completion"></progress>
+                <p id="my-progress-completion" class="js-my-progress-completion sr-only" aria-live="polite">0% complete</p>
+            </div>
+            <div class="quizBox">
+                <div class="question"> </div>
+                <div class="answerOptions"></div>
+                <div class="buttonArea">
+                    <button id="next" class="hidden">Next</button>
+                    <button id="submit" class="hidden">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="resultArea">
+            <div class="resultPage1">
+                <div class="resultBox">
+                    <h1>Result Summary</h1>
+                </div>
+                <div class="briefchart">
+                    <svg height="300" width="300" id="_cir_progress">
+                <g>
+                  <rect x="0" y="1" width="30" height="15"  fill="#ab4e6b" />
+                  <text x="32" y="14" font-size="14"  class="_text_incor">Incorrect : 12 </text>
+                </g>
+                <g>
+                  <rect x="160" y="1" width="30" height="15"  fill="#968089" />
+                  <text x="192" y="14" font-size="14" class="_text_cor">Correct : 12</text>
+               </g>          
+                <circle class="_cir_P_x" cx="150" cy="150" r="120" stroke="#ab4e6b" stroke-width="20" fill="none" onmouseover="evt.target.setAttribute('stroke', 'rgba(171, 78, 107,0.7)');" onmouseout="evt.target.setAttribute('stroke','#ab4e6b');"></circle>
+      
+                <circle class="_cir_P_y" cx="150" cy="150" r="120" stroke="#968089" stroke-width="20"  stroke-dasharray="0,1000" fill="none"  onmouseover="evt.target.setAttribute('stroke', 'rgba(150, 128, 137,0.7)');" onmouseout="evt.target.setAttribute('stroke','#968089');"></circle>
+                <text x="50%" y="50%" text-anchor="middle" stroke="none" stroke-width="1px" dy=".3em" class="_cir_Per">0%</text>
+                </svg>
+                </div>
+
+                <div class="resultBtns">
+                    <button class="viewanswer">View Answers</button>
+                    <button class="viewchart">View Chart</button>
+                    <button class="replay"><i class="fa fa-repeat" style="font-size:1em;"></i> <br/>Replay</button>
+                </div>
+            </div>
+
+            <div class="resultPage2">
+                <h1>Your Result</h1>
+                <div class="chartBox">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+                <button class="backBtn">Back</button>
+            </div>
+
+            <div class="resultPage3">
+                <h1>Your Answers</h1>
+                <div class="allAnswerBox">
+
+                </div>
+                <button class="backBtn">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="testquiz2.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flashcards</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="flashcardtest.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/bca5dccbcd.js" crossorigin="anonymous"></script>
+    <script src="flashcardtest.js" async defer></script>
+</head>
+
+<body>
+    <section>
+        <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark " style="background-color: #282d32;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-code"></i> KODEX</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="arrayquiz.html">Quiz</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Languages
+                  </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="python.html">Python</a>
+                                <a class="dropdown-item" href="#">C#</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="box">
+        <div id="test"></div>
+        <ul id="tabs" class="tabs">
+            <li id="quiz"><a href="#tab1">Quiz Mode</a>
+            </li>
+            <li id="study"><a href="#tab2">Memorise Mode</a>
+            </li>
+        </ul>
+        <div class="folder">
+            <h1>JavaScript Arrays</h1>
+            <div id="howMany" class="howMany"></div>
+            <div id="tab1">
+                <!--Card-->
+
+                <div class="card">
+                    <div id="front" class="front">
+                    </div>
+                    <div id="back" class="back">
+                    </div>
+                </div>
+
+                <br>
+                <button id="fail" type="button">Missed It</button>
+                <button id="success" type="button">Got It!</button>
+
+
+                <div id="successRate"></div>
+                <div id="block">
+                    <div id="progress">
+                        <div id="percent">Card 1 of 10</div>
+                        <div id="bar"></div>
+                    </div>
+                </div>
+                <button id="missed" type="button">Retry Missed</button>
+                <button id="full" type="button">Retry Full Set</button>
+            </div>
+            <div id="tab2">
+                <div id="studyCards">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item text">
+                        <h3>Developer</h3>
+                        <p>Mohammad A.Ali</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Project Aim</h3>
+                        <p>To develop an innovative learning app for prospective Computer science and programming students.</p>
+                    </div>
+
+                    <div class="col item social"><a href="https://github.com/mali2496"><i class="fab fa-github"></i></a><a href="https://www.instagram.com/mohammed.a.l/?hl=en"><i class="fab fa-instagram"></i></a><a href="mailto:ma2367y@gre.ac.uk"><i class="fas fa-envelope-square"></i></a>
+                        <p class="copyright">KODEX © 2021</p>
+                    </div>
+                    <p class="float-right"><a href="#">Back to top</a></p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="flashcardtest.js"></script>
+
+</body>
+
+</html>
